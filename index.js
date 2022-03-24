@@ -6,11 +6,14 @@ const cTable = require('console.table');
 
 const dbAPI = new DatabaseAPI(connection);
 
-dbAPI.init()
-.then( () => {
-    inquirer
-        .prompt(dbAPI.promisePrompts())
-})
+
+dbAPI.printAllDepartments();
+
+// dbAPI.init()
+// .then( () => {
+//     inquirer
+//         .prompt(dbAPI.promisePrompts())
+// })
 
 // dbAPI.promisePrompts()
 // .then((prompts) => {
