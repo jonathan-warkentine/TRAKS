@@ -1,7 +1,8 @@
-const mysql = require('mysql2/promise');
+const mysql = require('mysql2');
 require('dotenv').config();
+const chalk = require('chalk');
 
-exports.connection = mysql.createConnection(
+module.exports = mysql.createConnection(
     {
       host: 'localhost',
       user: process.env.usrnm,
@@ -9,6 +10,6 @@ exports.connection = mysql.createConnection(
       database: process.env.dbname,
     },
     
-    console.log(`\nConnected to the ${process.env.dbname} database.\n`)
+    console.info(chalk.green(`\nConnected to the ${process.env.dbname} database...\n`))
 
   );

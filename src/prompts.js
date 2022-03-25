@@ -1,24 +1,31 @@
 
-const promptData = [
- 
-    ['fred', 'bob'],
-
-    [
-        {
-            name: 'purpose',
-            type: 'list',
-            message: 'What would you like to do?',
-            choices: ['View All Departments', 'View All Roles', 'View All Employees', 'Add a Department', 'Add a Role', 'Add an Employee', 'Update an Employee Role']
-        },
-        {
-            when: answers => answers.purpose === 'Update an Employee Role',
-            name: 'EmployeeSelect',
-            type: 'list',
-            message: "Which Employee's Role Would You Like to Update?",
-            choices: this[0]
-        }
-    ]
+module.exports = [
+    {
+        name: 'purpose',
+        type: 'list',
+        message: 'I would like to...',
+        choices: ['VIEW', 'ADD', 'UPDATE']
+    },
+    {
+        when: answers => answers.purpose === 'VIEW',
+        name: 'tableSelect',
+        type: 'list',
+        message: "What Would You Like to View?",
+        choices: ['DEPARTMENTS', 'POSITIONS', 'EMPLOYEES']
+    },
+    {
+        when: answers => answers.purpose === 'ADD',
+        name: 'EmployeeSelect',
+        type: 'list',
+        message: "What Would You Like to Add?",
+        choices: ['A Department', 'A Job Position', 'An Employee']
+    },
+    {
+        when: answers => answers.purpose === 'UPDATE',
+        name: 'EmployeeSelect',
+        type: 'list',
+        message: "What Would You Like to View?",
+        choices: ['A Department', 'A Job Position', 'An Employee']
+    }
 ]
-
-module.exports = promptData;
 
