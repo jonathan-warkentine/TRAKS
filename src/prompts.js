@@ -1,31 +1,47 @@
+module.exports = {
+    
+    general: [
+        {
+            name: 'tableSelect',
+            type: 'list',
+            message: "Let's interact with...",
+            choices: ['Error - choice list not populated'], //to be populated when called
+            filter: answer => answer.toLowerCase().slice(0, -1) //format for immediate use in MySQL
+        },
+        {
+            name: 'modeSelect',
+            type: 'list',
+            message: 'I Want to...',
+            choices: answers => [`VIEW ${answers.tableSelect.toUpperCase()}(S)`, `ADD ${answers.tableSelect.toUpperCase()}(S)`, `UPDATE ${answers.tableSelect.toUpperCase()}(S)`, `DELETE ${answers.tableSelect.toUpperCase()}(S)`],
+            filter: modeSelection => modeSelection.slice(0, modeSelection.indexOf(' ')) //Gives us 'VIEW', 'ADD', or 'UPDATE'
+        },        
+    ],
 
-module.exports = [
-    {
-        name: 'purpose',
-        type: 'list',
-        message: 'I would like to...',
-        choices: ['VIEW', 'ADD', 'UPDATE']
-    },
-    {
-        when: answers => answers.purpose === 'VIEW',
-        name: 'tableSelect',
-        type: 'list',
-        message: "What Would You Like to View?",
-        choices: ['DEPARTMENTS', 'POSITIONS', 'EMPLOYEES']
-    },
-    {
-        when: answers => answers.purpose === 'ADD',
-        name: 'EmployeeSelect',
-        type: 'list',
-        message: "What Would You Like to Add?",
-        choices: ['A Department', 'A Job Position', 'An Employee']
-    },
-    {
-        when: answers => answers.purpose === 'UPDATE',
-        name: 'EmployeeSelect',
-        type: 'list',
-        message: "What Would You Like to View?",
-        choices: ['A Department', 'A Job Position', 'An Employee']
+    add: [
+        {
+            // when: answers => answers.modeSelect === 'ADD',
+            name: 'addWhat',
+            type: 'list',
+            message: (answers) => console.log(answers),
+            choices: []
+        }
+    ],
+
+    update: [
+        {
+
+        }
+    ],
+
+    delete: [
+        {
+
+        }
+    ],
+
+    done: {
+        name: 'done',
+        message: 'Done?',
+        type: 'confirm'
     }
-]
-
+}

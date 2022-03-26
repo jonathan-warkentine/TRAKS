@@ -1,13 +1,17 @@
 const inquirer = require('inquirer');
-const generalPrompts = require('./src/prompts');
 const connection = require('./config/connection')
 const DatabasePromptAPI = require('./lib/DatabasePromptAPI');
 const cTable = require('console.table');
 
 const dbAPI = new DatabasePromptAPI(connection);
 
-// dbAPI.printTable('employee');
-dbAPI.add();
+// dbAPI.evalForeignKeys('department')
+// .then((result)=>console.log(result))
+
+dbAPI.clarifyUpdate('employee')
+.then((result)=>console.log(result))
+
+// dbAPI.startPrompts();
 // dbAPI.addDepartment('test department1213')
 // .then(()=> dbAPI.printAllDepartments())
 
