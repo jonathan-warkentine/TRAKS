@@ -6,7 +6,6 @@ module.exports = {
             type: 'list',
             message: "Let's interact with...",
             choices: ['Error - choice list not populated'], //to be populated when called
-            filter: answer => answer.toLowerCase().slice(0, -1) //format for immediate use in MySQL
         },
         {
             name: 'modeSelect',
