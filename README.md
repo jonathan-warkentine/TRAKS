@@ -8,12 +8,6 @@
 
 ### Outstanding Improvements
 
-- [X] "View All departments
-- [X] "View All Roles"
-- [X] "View All Employees
-- [ ] "Add Department"
-- [ ] "Add Role"
-- [ ] "Add Employee"
-- [ ]
-
+- [ ] validate ADD and UPDATE based on type, re-evalue unique validation
+- [ ] implement the reactive interface for inquirer
 - [ ] Is there a "local key" equivalent to a foreign key in MySQL?

@@ -5,13 +5,10 @@ const cTable = require('console.table');
 
 const dbAPI = new DatabasePromptAPI(connection);
 
-// dbAPI.evalForeignKeys('department')
+// dbAPI.promiseColNames('employee')
 // .then((result)=>console.log(result))
 
-dbAPI.clarifyUpdate('employee')
-.then((result)=>console.log(result))
-
-// dbAPI.startPrompts();
+dbAPI.startPrompts();
 // dbAPI.addDepartment('test department1213')
 // .then(()=> dbAPI.printAllDepartments())
 
