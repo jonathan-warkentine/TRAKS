@@ -3,4 +3,4 @@ const DatabasePromptAPI = require('./lib/DatabasePromptAPI');
 
 const dbAPI = new DatabasePromptAPI(connection);
 
-dbAPI.startPrompts();
+dbAPI.init();
