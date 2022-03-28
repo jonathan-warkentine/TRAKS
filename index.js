@@ -15,6 +15,7 @@ const dbAPI = new DatabasePromptAPI(connection);
 // .then(()=> dbAPI.printAllDepartments())
 
 
-
+// dbAPI.checkForeignConstraints('department', 10)
+// .then((result) => console.log(result))
 
 dbAPI.startPrompts();
