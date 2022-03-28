@@ -27,12 +27,14 @@
   ---
   ## Installation:
 
-  You must have node installed on your machine in order to run this app. Run the command `npm i` to install dependencies, which include:
+  You must have [node installed](https://nodejs.org/en/download/) on your machine in order to run this app. Run the command `npm i` to install dependencies, which include:
 - [ ] console.table
 - [ ] mysql2
 - [ ] dotenv
 - [ ] inquirer
 - [ ] asciiart-logo
+
+In addition, you must have [MySQL installed](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/) on your machine, with at least one database. 
 
   &nbsp;  
 
@@ -78,7 +80,6 @@
   Or send an email: [jonathan.warkentine@gmail.com](mailto:jonathan.warkentine@gmail.com)
   
 ### Outstanding Improvements/Bug Fixes
-- [ ] unable to delete rows that have *possibility* of foreign constraints rather than *actual* foreign constraints
 - [ ] implement the reactive interface for inquirer
 - [ ] start by selecting database
 - [ ] Is there a "local key" equivalent to a foreign key in MySQL?
