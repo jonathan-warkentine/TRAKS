@@ -27,7 +27,12 @@
   ---
   ## Installation:
 
-  You must have node installed on your machine in order to run this app. Run the command `npm i` to install the inquirer and fs dependencies.
+  You must have node installed on your machine in order to run this app. Run the command `npm i` to install dependencies, which include:
+- [ ] console.table
+- [ ] mysql2
+- [ ] dotenv
+- [ ] inquirer
+- [ ] asciiart-logo
 
   &nbsp;  
 
@@ -35,9 +40,9 @@
   ## Usage:
   
 
-  This app gives a series of prompts relating to the project at hand. A resulting README.md file is created within the ‘dist’ folder, within a folder with the same name as the project. Folders are automatically created where missing.
+  This app connects to a MySQL database via the mysql2 npm package. The connection is managed via a .env file, but this is abstracted through a series of setup prompts.
 
-  For a complete walkthrough, check out *[this video link](https://youtu.be/N72LcdeueRA).*
+  For a complete walkthrough, check out *[this video link]().*
 
   &nbsp;  
 
@@ -72,15 +77,8 @@
 
   Or send an email: [jonathan.warkentine@gmail.com](mailto:jonathan.warkentine@gmail.com)
   
-### Dependencies
-- [ ] console.table
-- [ ] mysql2/promise
-- [ ] dotenv
-- [ ] inquirer
-- [ ] asciiart-logo
-
-### Outstanding Improvements
-
-- [ ] validate ADD and UPDATE based on type, re-evalue unique validation
+### Outstanding Improvements/Bug Fixes
+- [ ] unable to delete rows that have *possibility* of foreign constraints rather than *actual* foreign constraints
 - [ ] implement the reactive interface for inquirer
+- [ ] start by selecting database
 - [ ] Is there a "local key" equivalent to a foreign key in MySQL?

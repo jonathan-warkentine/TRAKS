@@ -3,6 +3,7 @@
     "asciiart-logo": "^0.2.6",
     "console.table": "^0.10.0",
     "dotenv": "^16.0.0",
+    "fs": "^0.0.1-security",
     "inquirer": "^8.2.1",
     "mysql2": "^2.3.3"
   }

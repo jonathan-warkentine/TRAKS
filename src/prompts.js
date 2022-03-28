@@ -1,5 +1,22 @@
 module.exports = {
-    
+    setup: [
+        {
+            name: ''
+        }
+    ],
+    credentials: [
+        {
+            name: 'dbusername',
+            type: 'input',
+            message: 'Enter Your MySQL Username',
+
+        },
+        {
+            name: 'dbpassword',
+            type: 'password',
+            message: 'Enter Your MySQL Password',
+        }
+    ],
     general: [
         {
             name: 'tableSelect',
@@ -23,18 +40,6 @@ module.exports = {
             type: 'list',
             message: (answers) => console.log(answers),
             choices: []
-        }
-    ],
-
-    update: [
-        {
-
-        }
-    ],
-
-    delete: [
-        {
-
         }
     ],
 
