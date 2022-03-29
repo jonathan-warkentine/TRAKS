@@ -80,7 +80,9 @@ In addition, you must have [MySQL installed](https://dev.mysql.com/doc/mysql-ins
   Or send an email: [jonathan.warkentine@gmail.com](mailto:jonathan.warkentine@gmail.com)
   
 ### Outstanding Improvements/Bug Fixes
+- [ ] iron out 'back' bugs
 - [ ] implement an UPDATE feature for tables
+- [ ] alphanumeric validation for adding/updating columns && rows
 - [ ] validation for new table setup
 - [ ] implement the reactive interface for inquirer
 - [ ] start by selecting database
