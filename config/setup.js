@@ -1,5 +1,4 @@
 const inquirer = require('inquirer');
-const logo = require('asciiart-logo');
 const fs = require('fs');
 const utils = require('../utils/utils');
 require('dotenv').config()
@@ -13,23 +12,6 @@ const mySQLsetup = async () => {
     }
 
     return createConnection();
-}
-
-function printWelcome() {
-    console.log(
-            logo({
-            name: 'TRAKS',
-            font: 'Star Wars',
-            borderColor: 'grey',
-            logoColor: 'bold-green',
-            textColor: 'green',
-        })
-        .emptyLine()
-        .right('VERSION 1.1')
-        .emptyLine()
-        .center('A Simple MySQL Database Command-Line API')
-        .render()
-    );
 }
 
 async function setupFiles(){
