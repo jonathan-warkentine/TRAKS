@@ -1,6 +1,6 @@
 const setup = require('./config/setup');
-const DatabaseAPI = require('./lib/DatabaseAPI');
+const MySQLapi = require('./lib/MySQLapi');
 
-const dbPromptAPI = new DatabaseAPI();
+const mySQLapi = new MySQLapi();
 
 

@@ -3,20 +3,20 @@ require('dotenv').config();
 const chalk = require('chalk');
 const fs = require('fs');
 
-const createConnection = () => {
+const createConnection = (database) => {
 
   let connection;
 
-  if (process.env.dbname){
+  if (database){
     connection = mysql.createConnection(
       {
         host: 'localhost',
         user: process.env.dbusername,
         password: process.env.dbpassword,
-        database: process.env.dbname
+        database: database
       },
       
-      console.info(chalk.green(`\nConnected to the ${process.env.dbname} Database...\n`))
+      console.info(chalk.green(`\nConnected to the ${database} Database...\n`))
     );
   }
 
@@ -30,6 +30,8 @@ const createConnection = () => {
       
       console.info(chalk.green(`\nConnected to MySQL...\n`))
     );
+
+    return connection;
   }
   
 
