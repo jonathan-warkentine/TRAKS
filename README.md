@@ -80,6 +80,7 @@ In addition, you must have [MySQL installed](https://dev.mysql.com/doc/mysql-ins
   Or send an email: [jonathan.warkentine@gmail.com](mailto:jonathan.warkentine@gmail.com)
   
 ### Outstanding Improvements/Bug Fixes
+- [ ] implement an UPDATE/ADD/DELETE feature for the databases themselves
 - [ ] implement the reactive interface for inquirer
 - [ ] start by selecting database
 - [ ] Is there a "local key" equivalent to a foreign key in MySQL?

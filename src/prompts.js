@@ -1,9 +1,4 @@
 module.exports = {
-    setup: [
-        {
-            name: ''
-        }
-    ],
     credentials: [
         {
             name: 'dbusername',
@@ -21,7 +16,7 @@ module.exports = {
         {
             name: 'tableSelect',
             type: 'list',
-            message: "Let's interact with...",
+            message: "Choose a Table...",
             choices: ['Error - choice list not populated'], //to be populated when called
         },
         {
