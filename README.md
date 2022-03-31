@@ -81,8 +81,6 @@ In addition, you must have [MySQL installed](https://dev.mysql.com/doc/mysql-ins
   
 ### Outstanding Improvements/Bug Fixes
 - [ ] consolidate functions (remove duplicates across classes)
-- [ ] iron out 'back' bugs
-- [ ] implement an UPDATE feature for tables
 - [ ] alphanumeric validation for adding/updating columns && rows
 - [ ] validation for new table setup
 - [ ] implement the reactive interface for inquirer
