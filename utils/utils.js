@@ -11,6 +11,8 @@ module.exports = {
             case 'text':
             case 'varchar(30)':
                 return isNaN(attempt) && typeof attempt == 'string';
+            case 'tinyint(1)':
+                return attempt==0 || attempt==1;
             default:
                 return attempt? true: false;
         }
