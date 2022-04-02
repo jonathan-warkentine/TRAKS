@@ -3,7 +3,7 @@ require('dotenv').config();
 const chalk = require('chalk');
 const fs = require('fs');
 
-const createConnection = (database) => {
+module.exports = connection = async database => {
 
   let connection;
 
@@ -36,6 +36,4 @@ const createConnection = (database) => {
   
 
   return connection;
-}
-
-module.exports = createConnection;
+};

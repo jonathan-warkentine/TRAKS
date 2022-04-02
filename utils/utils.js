@@ -1,5 +1,5 @@
 module.exports = {
-    getValues(object) {
+    objValues(object) {
         return Object.values(object).flat();
     },
 

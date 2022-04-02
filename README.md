@@ -81,7 +81,7 @@ In addition, you must have [MySQL installed](https://dev.mysql.com/doc/mysql-ins
   
 ### Outstanding Improvements/Bug Fixes
 - [ ] consolidate functions (remove duplicates across classes)
-- [ ] alphanumeric validation for adding/updating columns && rows
+- [ ] overhaul fk validation for join
 - [ ] validation for new table setup
 - [ ] implement the reactive interface for inquirer
 - [ ] start by selecting database

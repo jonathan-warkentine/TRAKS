@@ -1,6 +1,5 @@
-const setup = require('./config/setup');
-const MySQLapi = require('./lib/MySQLapi');
+const MySQLinterface = require('./lib/MySQLinterface');
 
-const mySQLapi = new MySQLapi();
-
+const interface = new MySQLinterface();
+interface.init();
 

@@ -4,14 +4,14 @@ const utils = require('../utils/utils');
 require('dotenv').config()
 
 const prompts = require('../src/prompts');
-const createConnection = require('../config/connection');
+const connection = require('../config/connection');
 
-const mySQLsetup = async () => {
+module.exports = createConnection = async database => {
     if (!fs.existsSync('./.env')){ //if a .env file does not already exist, create and populate via user prompts
         await setupFiles();
     }
 
-    return createConnection();
+    return connection(database);
 }
 
 async function setupFiles(){
@@ -22,5 +22,3 @@ async function setupFiles(){
         process.env.dbpassword = answers.dbpassword;
     })
 }
-
-module.exports = mySQLsetup;
