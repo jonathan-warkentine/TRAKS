@@ -28,11 +28,12 @@
   ## Installation:
 
   You must have [node installed](https://nodejs.org/en/download/) on your machine in order to run this app. Run the command `npm i` to install dependencies, which include:
-- [ ] console.table
+- [ ] cTable
 - [ ] mysql2
 - [ ] dotenv
 - [ ] inquirer
 - [ ] asciiart-logo
+- [ ] chalk
 
 In addition, you must have [MySQL installed](https://dev.mysql.com/doc/mysql-installation-excerpt/5.7/en/) on your machine, with at least one database. 
 
