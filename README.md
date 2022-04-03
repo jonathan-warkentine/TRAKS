@@ -1,7 +1,5 @@
-# TRAKS
-A Simple MySQL Database CLI Built on Node.js
-
-  # Readme Generator
+  # TRAKS
+  A Simple MySQL Database CLI Built on Node.js
 
   &nbsp;  
 
