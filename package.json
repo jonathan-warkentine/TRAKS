@@ -1,4 +1,6 @@
 {
+  "name": "TRAKS",
+  "version": "1.2.5",
   "dependencies": {
     "asciiart-logo": "^0.2.6",
     "console.table": "^0.10.0",
