@@ -1,5 +1,5 @@
   # TRAKS
-  Tool for Rapid AcKcess of SQL: A Simple MySQL Database CLI Built on Node.js
+  (T.ool for R.apid A.cK.cess of S.QL): A Simple MySQL Database CLI Built on Node.js
 
   &nbsp;  
 
